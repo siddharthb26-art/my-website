@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>HTML Only</title>
+    <style>
+        body {
+            background-color: #F5F5DC;
+            font-family: Arial, sans-serif;
+            margin: 30px;
+        }
+
+        .header {
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 5px;
+            border-bottom: 3px solid yellow;
+        }
+
+        .box {
+            padding: 8px;
+            margin-bottom: 5px;
+            border: 4px solid;
+          
+        }
+
+        .one {
+            background-color: #f5e8d2;
+            border-color: BlueViolet;
+        }
+
+        .two {
+            background-color: #f5e8d2;
+            border-color: aqua;
+        }
+
+        .three {
+            background-color: #f5e8d2;
+            border-color: Gold;
+        }
+
+        h3 {
+            margin-top: 0;
+        }
+
+        p {
+            font-size: 16px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="header">
+        <h2>HTML Only</h2>
+        <small>▸ Navigation</small>
+    </div>
+
+    <div class="box one">
+        <h3>What is this?</h3>
+        <p>
+            This page was inspired by a
+            <a href="#">tweet from Elon Musk</a>.
+            Pretty HTML only pages are difficult to make well and accessible.
+            But here we are. I'm trying my best.
+        </p>
+    </div>
+
+    <div class="box two">
+        <h3>How does this work?</h3>
+
+        <p>
+            The key to a lot of this is leveraging using tables with a
+            role="presentation" attribute to make decorated sections without
+            CSS. If you view source on the page, you'll see that there are
+            a LOT of tables. The table tag typically is used to display
+            tabular data and should NOT be used as a layout method.
+            However, since I am not allowed to use CSS, I am pretty much
+            exclusively relying on tables for this purpose.
+        </p>
+
+        <p>
+            I'm also leveraging some deprecated HTML elements from HTML 3.2
+            that you should never use. In order to be "compliant", I've added
+            the HTML 3.2 doctype at the top of the page:
+            <br>
+            &lt;!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN"&gt;
+            <br>
+            This helps give a hint to the browser that we are going to use
+            some older stuff.
+        </p>
+
+        <p>
+            HOWEVER, I'm also using some newer things such as details/summary,
+            section, main, header, and footer. So I'm just making a mess of my
+            doctype and what I should be actually using!
+        </p>
+    </div>
+
+    <div class="box three">
+        <h3>But Why?</h3>
+    </div>
+
+</body>
+</html>
